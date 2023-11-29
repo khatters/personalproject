@@ -1,0 +1,353 @@
+
+@media screen and (min-width: 776px){
+    body{
+        /*display: grid;
+        grid-template-columns: 1fr 1fr;*/
+        background-color: rgb(15, 19, 35);
+    }
+
+    #skip {
+        text-decoration: underline;
+        border: solid white;
+        position: relative;
+        top: -40px
+    }
+    
+    #skip:focus{
+        top: 100px;
+      }
+    
+    
+    .dropdown {
+        position: relative;
+    }
+
+    .dropbtn {
+        font-size: 140%;
+        border: none;
+        outline: none;
+        color: black;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        min-width: 25%;
+        box-shadow: 0px 8px 16px 0px whitesmoke;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        background-color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        right: 14%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /*sticky navigation bar */
+    .navbar {
+        position: sticky;
+        grid-column: span 2; 
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        border: 2px solid rgb(116, 102, 84);
+        padding: 0;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar li {
+        flex-grow: 1;
+        text-align: center;
+        padding: 0;
+        background-color: rgb(236, 236, 235);
+    }
+    
+    .navbar a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 125%;
+        position: relative;
+        
+
+    }
+
+    .navbar a.active {
+
+        color: rgb(24, 16, 2);
+        font-weight: bold;
+        left: 0;
+        right: 14%
+    }
+
+    /*these are my body styling elements*/
+
+    .firstheader{
+        display: grid;
+        grid-column: span 2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 110%;
+    } 
+
+    .homepageimg{
+        display: grid;
+        grid-column: span 2;  
+        justify-content: center;
+        width: 70%;
+        margin: auto; 
+    }
+    .Mira1, .Saria1, .Jiya1, .Anya1, .Mina1, .Northern1, .Eastern1, .Central1, .Southern1, .Western1{
+        display: block;
+        border: 3px solid whitesmoke;
+        width: 40%;
+        margin: auto;
+        border-radius: 5%;
+    }
+    .Miraimg {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+        margin: auto;
+        border: 3px solid green;
+        width: 30%;
+        border-radius: 5%;
+        height: auto;
+    }
+    
+    .characterp {
+        text-align: center;
+        width: 100%; /* Adjust the width as needed */
+        margin: 5px; /* Add spacing between text */
+    }
+
+
+    h1, h2, .homepagetext, .characterp, .characterheader, .regiontext{
+        text-align: center;
+        margin: auto;
+        padding: 2%;
+        font-size: 110%;
+        color: antiquewhite;
+    }
+
+    .regiontext{
+
+        text-align: center; 
+        padding: 2%;
+        font-size: 110%;
+        color: antiquewhite;
+
+    }
+
+    .shadowbox{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.1);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(5px);
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+        will-change: transform;
+        text-align: center;
+        transition: transform 0.5s ease;
+        position: relative;
+        perspective: 1000px;
+        height: 500px;
+    }
+
+    .content1.shadowbox{
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.1);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(5px);
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+        will-change: transform;
+        text-align: center;
+        transition: transform 0.5s ease;
+        position: relative;
+        grid-column: span 2;
+        height: 100%;
+        width: 55%;
+    }
+
+    .shadowbox .front-content,
+    .shadowbox .back-content {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        right: 10%;
+        bottom: 10%;
+        backface-visibility: hidden; 
+        transition: transform 0.8s ease; 
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shadowbox .back-content {
+        transform: rotateY(180deg);
+        direction: ltr;
+        color: #000; 
+        
+    }
+
+    .shadowbox:hover .front-content {
+        transform: rotateY(180deg);
+    }
+
+    .shadowbox:hover .back-content {
+        transform: rotateY(0deg);
+    }
+    .content1{
+        display: grid;
+        grid-column: span 2;
+        align-self: center;
+        margin: auto;
+        width: 60%;
+    }
+    .content1.homepagetext{
+        line-height: 120%;
+        font-size: 120%;
+    }
+    .content2 {
+        display: grid;
+        grid-column: 1;
+    }
+
+    .content3 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /*dropdown content images csss hopefully work lmao*/
+    .hidden {
+        display: none;
+    }
+
+    .dropdown button {
+        background-color: #2d3f2e;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .dropdown button:hover {
+        background-color: #45a049;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*regions code */
+
+    .regionbackgroundimage{
+        background-image: url('../images/centralregionback.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .smallregionpic{
+        width: 10%;
+        margin: 3%;
+    }
+
+    .smallregionpicmain{
+        width: 10%;
+        margin: 0%;
+    }
+
+    .regionheader, .regionsintro.regiontext{
+        size: 125%;
+    }
+    .SouthernRegion {
+        grid-column: 2;
+    }
+
+    .regionbackgroundimage{
+        grid-column: span 2;
+    }
+
+    .regionsintro{
+        grid-column: span 2;
+    }
+    .regionheader {
+        text-align: center;
+    }
+
+    .maindiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
