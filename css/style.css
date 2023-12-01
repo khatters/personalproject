@@ -346,6 +346,20 @@
         text-align: center;
     }
 
+    /* footer styles */ 
+
+    .footer{
+        background-color:#637b64;
+        color: rgb(245, 236, 220);
+        padding: 1%;
+        display: flex;
+    }
+
+    .footer.copyrighticon{
+        display: flex;
+        align-items: center;
+        padding: 5%
+    }
     .maindiv{
         display: grid;
         grid-template-columns: 1fr 1fr;
