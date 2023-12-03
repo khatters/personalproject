@@ -6,6 +6,9 @@
     <title>Homepage</title>
     <link rel="favicon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/775fed8ed9.js" crossorigin="anonymous"></script> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&display=swap');
+      </style>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,10 +21,10 @@
     <nav class="navbar">
         <ul>
             <li class="dropdown">
-                <a href="index.html" class="dropbtn active">Homepage<i class="fa fa-caret-down"></i></a>
+                <a href="index.html" class="dropbtn active">Homepage (پەڕەی سەرەکی)<i class="fa fa-caret-down"></i></a>
             </li>
             <li class="dropdown">
-                <a href="characters.html" class="dropbtn">Characters<i class="fa fa-caret-down"></i></a>
+                <a href="characters.html" class="dropbtn">Characters (کاراکتەرەکان)<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#Mira">Mira</a>
                     <a href="#Saria">Saria</a>
@@ -32,7 +35,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="regions.html" class="dropbtn">Regions<i class="fa fa-caret-down"></i></a>
+                <a href="regions.html" class="dropbtn">Regions (هەرێمەکان)<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#NorthernRegion">Nothern Region</a>
                     <a href="#EasternRegion">Eastern Region</a>
@@ -42,14 +45,17 @@
                     <a href="#Lami">Lami</a>
                 </div>
             </li>
+            <li class="dropdown">
+                <a href="regionculture.html" class="dropbtn">Historical Relevance (پەیوەندی مێژوویی)<i class="fa fa-caret-down"></i></a>
+            </li>
         </ul>
     </nav>
     <main id = "main">
         <div class = "maindiv regionbackgroundimage">
-            <div class="regionsintro shadowbox">
+            <div class="regionsintro shadowbox" tabindex="0">
                 <div class="front-content">
                     <img class ="smallregionpicmain" src = "images/khanateflag.png" alt = "">
-                    <h1>REGIONS</h1>
+                    <h1>REGIONS (هەرێمەکان)</h1>
                     <p class = "regiontext"> There are 6 official regions in the Khanate -- the Northern Region, Eastern Region, Central Region, Southern Region, and Western Region. There is also Lami, an island region. Among these 6 regions, over 25 languages are spoken, with 5 of those languages recognized as official regional languages. The official language of the Khanate is Arabic. The population of the Khanate is 33 million, with the most populated region being the Northern Region, the official capital of the Khanate, and the least populated region being the Eastern Region. </p>
                     <img class ="smallregionpic" src = "images/northflag.png" alt = "">
                     <img class ="smallregionpic" src = "images/easternflag.png" alt = "">
@@ -70,7 +76,7 @@
                     <img class ="smallregionpic" src = "images/lami.png" alt = "">
                 </div>
             </div>
-            <div class = "NorthernRegion shadowbox">
+            <div class = "NorthernRegion shadowbox" tabindex="0">
                     <div class="front-content">
                     <h2 class = "regionheader" id = "NorthernRegion">NORTHERN REGION</h2>
                     <img class = "Northern1" src = "images/northflag.png" alt = "Northern Region Flag">
@@ -91,7 +97,7 @@
                     </div>
             </div>
             
-            <div class = "EasternRegion shadowbox">
+            <div class = "EasternRegion shadowbox" tabindex="0">
                 <div class="front-content">
                 <h2 class = "regionheader">EASTERN REGION</h2>
                 <img class = "Eastern1" src = "images/easternflag.png" alt = "Eastern Region Flag">
@@ -112,7 +118,7 @@
                 </div>
             </div>
             
-            <div class = "CentralRegion shadowbox">
+            <div class = "CentralRegion shadowbox" tabindex="0">
                 <div class="back-content">
                 <h2 class = "regionheader" id="CentralRegion">مرکزی علاقہ</h2>
                 <img class = "Central1" src = "images/centralflag.png" alt = "Central Region Flag">
@@ -133,7 +139,7 @@
                 </div>
             </div>
             
-            <div class = "SouthernRegion shadowbox">
+            <div class = "SouthernRegion shadowbox" tabindex="0">
                 <div class="front-content">
                 <h2 class = "regionheader" id = "SouthernRegion">SOUTHERN REGION</h2>
                 <img class = "Southern1" src = "images/southernflag.png" alt = "Southern Region Flag">
@@ -154,7 +160,7 @@
                 </div>
             </div>
             
-            <div class = "WesternRegion shadowbox">
+            <div class = "WesternRegion shadowbox" tabindex="0">
                 <div class="front-content">
                 <h2 class = "regionheader" id="WesternRegion">WESTERN REGION</h2>
                 <img class = "Western1" src = "images/westernflag.png" alt = "Western Region Flag">
@@ -175,7 +181,7 @@
                 </div>
             </div>
 
-            <div class = "Lami shadowbox">
+            <div class = "Lami shadowbox" tabindex="0">
                 <div class="front-content">
                 <h2 class = "regionheader" id="Lami">LAMI</h2>
                 <img class = "Western1" src = "images/lami.png" alt = "Lami Flag">

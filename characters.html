@@ -6,6 +6,12 @@
     <title>Homepage</title>
     <link rel="favicon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/775fed8ed9.js" crossorigin="anonymous"></script> 
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script defer src = "js/navbar.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&display=swap');
+    </style>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,10 +21,10 @@
     <nav class="navbar">
         <ul>
             <li class="dropdown">
-                <a href="index.html" class="dropbtn">Homepage<i class="fa fa-caret-down"></i></a>
+                <a href="index.html" class="dropbtn">Homepage (پەڕەی سەرەکی)<i class="fa fa-caret-down"></i></a>
             </li>
             <li class="dropdown">
-                <a href="characters.html" class="dropbtn active">Characters<i class="fa fa-caret-down"></i></a>
+                <a href="characters.html" class="dropbtn active">Characters (کاراکتەرەکان)<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#Mira">Mira</a>
                     <a href="#Saria">Saria</a>
@@ -29,7 +35,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="regions.html" class="dropbtn">Regions<i class="fa fa-caret-down"></i></a>
+                <a href="regions.html" class="dropbtn">Regions (هەرێمەکان)<i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#NorthernRegion">Nothern Region</a>
                     <a href="#EasternRegion">Eastern Region</a>
@@ -38,114 +44,127 @@
                     <a href="#Lami">Lami</a>
                 </div>
             </li>
+            <li class="dropdown">
+                <a href="regionculture.html" class="dropbtn">Historical Relevance (پەیوەندی مێژوویی)<i class="fa fa-caret-down"></i></a>
+            </li>
         </ul>
     </nav>
     <main id = "main">
-        <h1>CHARACTERS</h1>
-        <h2 class = "secondheader characterheader" id = "Mira"> MIRA (Мира) </h2>
-        <div class = "Mira">
-            <img class = "Mira1" src = "images/mira id photo version 1 highE.png" alt = "Mira San'ya">
-            <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('MiraImages')">Show More Images</button>
-                <div id="MiraImages" class="hidden">
-                    <img class = "Miraimg" src = "images/mira base 3.jpg" alt = "Mira San'ya Plain ID">
-                    <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
-                    <img class = "Miraimg" src = "images/mira 1 far rose bush go crazy.png" alt = "Mira San'ya">
-                    <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
-                    <img class = "Miraimg" src = "images/mira 2 freckle medium.png" alt = "Mira San'ya">
-                    <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
-                    <img class = "Miraimg" src = "images/mira 1.5 variant.png" alt = "Mira San'ya">
-                    <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+        <div class = charactersbody>
+            <h1 class = "charactersheader">CHARACTERS (کاراکتەرەکان)</h1>
+            
+            <div class = "Mira">
+                <h2 class = "secondheader characterheader" id = "Mira"> MIRA (Мира) </h2>
+                <img class = "Mira1" src = "images/mira id photo version 1 highE.png" alt = "Mira San'ya">
+                <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('MiraImages')">Show More Images</button>
+
+                    <div id="MiraImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/mira base 3.jpg" alt = "Mira San'ya Plain ID">
+                        <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+                        <img class = "secondaryimg" src = "images/mira 1 far rose bush go crazy.png" alt = "Mira San'ya">
+                        <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+                        <img class = "secondaryimg" src = "images/mira 2 freckle medium.png" alt = "Mira San'ya">
+                        <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+                        <img class = "secondaryimg" src = "images/mira 1.5 variant.png" alt = "Mira San'ya">
+                        <p class = "characterp"> Mira San'ya, First Regiment Soldier, Southern Region </p>
+                </div>
+            </div>
+        </div>
+            
+            <div class = "Saria">
+                <h2 class = "thirdheader characterheader" id = "Saria"> SARIA (ساريا) </h2>
+                <img class = "Saria1" src = "images/saria war 2.png" alt = "Saria al-Abadi">
+                <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('SariaImages')">Show More Images</button>
+                    <div id="SariaImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/kay.a.h_abbassid_empire_era_iraqi_woman_wearing_court_clothing_98de4097-e169-4e37-9811-8b9b6bc7f0bc.webp" alt = "Saria al-Abadi">
+                        <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/saria war 1.png" alt = "Saria al-Abadi">
+                        <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/sariacourt2.webp" alt = "Saria al-Abadi">
+                        <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
             </div>
         </div>
     </div>
-        <h2 class = "thirdheader characterheader" id = "Saria"> SARIA (ساريا) </h2>
-        <div class = "Saria">
-            <img class = "Saria1" src = "images/placeholder.jpg" alt = "Saria al-Abadi">
-            <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('SariaImages')">Show More Images</button>
-                <div id="SariaImages" class="hidden">
-                    <img class = "Saria2" src = "images/placeholder.jpg" alt = "Saria al-Abadi">
-                    <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
-                    <img class = "Saria3" src = "images/placeholder.jpg" alt = "Saria al-Abadi">
-                    <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
-                    <img class = "Saria4" src = "images/placeholder.jpg" alt = "Saria al-Abadi">
-                    <p class = "characterp"> Saria al-Abadi, Historian, Northern Region </p>
+            
+            <div class = "Jiya">
+                <h2 class = "fourthheader characterheader" id = "Jiyah"> JIYAH (جیا)</h2>
+                <img class = "Jiya1" src = "images/jiya profile 1.webp" alt = "Jiya Prasad">
+                <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('JiyaImages')">Show More Images</button>
+                    <div id="JiyaImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jiya Prasad">
+                        <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jiya Prasad">
+                        <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jiya Prasad">
+                        <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
+            </div>
         </div>
     </div>
-</div>
-        <h2 class = "fourthheader characterheader" id = "Jiyah"> JIYAH (جیا)</h2>
-        <div class = "Jiya">
-            <img class = "Jiya1" src = "images/placeholder.jpg" alt = "Jiya Prasad">
-            <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('JiyaImages')">Show More Images</button>
-                <div id="JiyaImages" class="hidden">
-                    <img class = "Jiya2" src = "images/placeholder.jpg" alt = "Jiya Prasad">
-                    <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
-                    <img class = "Jiya3" src = "images/placeholder.jpg" alt = "Jiya Prasad">
-                    <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
-                    <img class = "Jiya4" src = "images/placeholder.jpg" alt = "Jiya Prasad">
-                    <p class = "characterp"> Jiyah Prasad, Fourth Regiment Commander, Central Region </p>
+            
+            <div class = "Mina">
+                <h2 class = "fifthheader characterheader" id = "Mina"> MINA (مينا)</h2>
+                <img class = "Mina1" src = "images/mina uniform headshot 3.png" alt = "Mina Yahaira al-Jabari">
+                <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('MinaImages')">Show More Images</button>
+                    <div id="MinaImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/uniform headshot 4.png" alt = "Mina Yahaira al-Jabari">
+                        <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/mina headshot uniform 2.png" alt = "Mina Yahaira al-Jabari">
+                        <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/mina headshot uniform.png" alt = "Mina Yahaira al-Jabari">
+                        <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
+            </div>
         </div>
     </div>
-</div>
-        <h2 class = "fifthheader characterheader" id = "Mina"> MINA (مينا)</h2>
-        <div class = "Mina">
-            <img class = "Mina1" src = "images/mina uniform headshot 3.png" alt = "Mina Yahaira al-Jabari">
-            <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('MinaImages')">Show More Images</button>
-                <div id="MinaImages" class="hidden">
-                    <img class = "Mina2" src = "images/placeholder.jpg" alt = "Mina Yahaira al-Jabari">
-                    <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
-                    <img class = "Mina3" src = "images/placeholder.jpg" alt = "Mina Yahaira al-Jabari">
-                    <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
-                    <img class = "Mina4" src = "images/placeholder.jpg" alt = "Mina Yahaira al-Jabari">
-                    <p class = "characterp"> Mina Yahaira al-Jabari, Fourth Regiment Soldier, Northern Region </p>
+            
+            <div class = "Jeremiah">
+                <h2 class = "sixthheader characterheader" id = "Jeremiah"> JEREMIAH (ኤርምያስ) </h2>
+                <img class = "Anya1" src = "images/Jeremiah looking into camera non first reg uniform.png" alt = "Jeremiah Solomon">
+                <p class = "characterp"> Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('JeremiahImages')">Show More Images</button>
+                    <div id="JeremiahImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
+                        <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
+                        <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
+                        <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
+            </div>
         </div>
     </div>
-</div>
-        <h2 class = "sixthheader characterheader" id = "Jeremiah"> JEREMIAH (ኤርምያስ) </h2>
-        <div class = "Jeremiah">
-            <img class = "Anya1" src = "images/Jeremiah looking into camera non first reg uniform.png" alt = "Jeremiah Solomon">
-            <p class = "characterp"> Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('JeremiahImages')">Show More Images</button>
-                <div id="JeremiahImages" class="hidden">
-                    <img class = "Jeremiah2" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
-                    <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
-                    <img class = "Jeremiah3" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
-                    <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
-                    <img class = "Jeremiah4" src = "images/placeholder.jpg" alt = "Jeremiah Solomon">
-                    <p class = "characterp">Jeremiah Solomon, First Regiment Soldier, Northern Region </p>
-        </div>
-    </div>
-</div>
-        <h2 class = "sixthheader characterheader" id = "Anya"> ANYA (Аня, انیا) </h2>
-        <div class = "Anya">
-            <img class = "Anya1" src = "images/Anya in first regiment or military uniform ID close up.png" alt = "Anya Prasad">
-            <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
-            <div class="dropdown">
-                <button onclick="toggleDropdown('AnyaImages')">Show More Images</button>
-                <div id="AnyaImages" class="hidden">
-                    <img class = "Anya2" src = "images/placeholder.jpg" alt = "Anya Prasad">
-                    <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
-                    <img class = "Anya3" src = "images/placeholder.jpg" alt = "Anya Prasad">
-                    <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
-                    <img class = "Anya4" src = "images/placeholder.jpg" alt = "Anya Prasad">
-                    <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
+            
+            <div class = "Anya">
+                <h2 class = "sixthheader characterheader" id = "Anya"> ANYA (Аня, انیا) </h2>
+                <img class = "Anya1" src = "images/Anya in first regiment or military uniform ID close up.png" alt = "Anya Prasad">
+                <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('AnyaImages')">Show More Images</button>
+                    <div id="AnyaImages" class="hidden">
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Anya Prasad">
+                        <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Anya Prasad">
+                        <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
+                        <img class = "secondaryimg" src = "images/placeholder.jpg" alt = "Anya Prasad">
+                        <p class = "characterp"> Anya Prasad, Thirteenth Regiment, Central Region </p>
+            </div>
         </div>
     </div>
 </div>
     <script>
         function toggleDropdown(id) {
             var dropdown = document.getElementById(id);
-            dropdown.classList.toggle('hidden');
+            dropdown.classList.toggle('dropdown');
         }
     </script>
+    
 </main>
 <footer class = "footer">
     <i class="fas fa-copyright fa-inverse copyrighticon"></i> <p>Katherine Isseks al-Abadi Hattersley</p>

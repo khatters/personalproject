@@ -1,22 +1,46 @@
 
 @media screen and (min-width: 776px){
+
     body{
-        /*display: grid;
-        grid-template-columns: 1fr 1fr;*/
-        background-color: rgb(15, 19, 35);
+        background-color: rgb(202, 142, 30);
+        font-family: 'Gentium Book Plus', serif;
     }
 
     #skip {
         text-decoration: underline;
         border: solid white;
         position: relative;
-        top: -40px
+        top: -40px;
+        outline: none;
     }
     
-    #skip:focus{
+    #skip:focus {
         top: 100px;
-      }
-    
+        border-color: #000;
+    }
+
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+    outline: 2px solid #3498db; 
+    }
+    #skip:focus {
+        background-color: #3498db;
+        color: #fff;
+    }
+    .dropdown-content a:focus {
+        background-color: #3498db;
+        color: #fff;
+    }
+    .shadowbox:focus {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
+    }
+
+    .content8.shadowbox:focus, .content9.shadowbox:focus, .content4.shadowbox:focus, .content2.shadowbox:focus, .content7.shadowbox:focus, .content5.shadowbox:focus, .content6.shadowbox:focus{
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.9); 
+    }
+
     
     .dropdown {
         position: relative;
@@ -65,7 +89,7 @@
         grid-column: span 2; 
         top: 0;
         z-index: 100;
-        background-color: white;
+        background-color: rgb(170, 114, 24);
         border: 2px solid rgb(116, 102, 84);
         padding: 0;
     }
@@ -81,7 +105,7 @@
         flex-grow: 1;
         text-align: center;
         padding: 0;
-        background-color: rgb(236, 236, 235);
+        background-color: rgb(255, 255, 255);
     }
     
     .navbar a {
@@ -105,6 +129,7 @@
 
     /*these are my body styling elements*/
 
+    
     .firstheader{
         display: grid;
         grid-column: span 2; 
@@ -112,16 +137,58 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 110%;
+        padding-top: 0%;
+        padding-bottom: 1%;
+        font-size: 135%;
     } 
 
     .homepageimg{
         display: grid;
         grid-column: span 2;  
         justify-content: center;
-        width: 70%;
+        width: 80%;
         margin: auto; 
+        border-radius: 5%;
+        padding: 2%;
+
     }
+
+    .homepageimg.kurdishscript{
+        display: grid;
+        grid-column: span 2;  
+        justify-content: center;
+        width: 55%;
+        margin: auto; 
+        padding: 1%;
+
+    }
+
+    .homepageimg1{
+        display: grid;
+        grid-column: span 2;  
+        justify-content: center;
+        width: 85%;
+        margin: auto; 
+        border-radius: 5%;
+        padding: 1%;
+    }
+
+    .charactersbody{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url('../images/charactersback2.webp');
+        background-attachment: scroll; /*decided this looks better not as a parrallax image*/
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+
+    }
+
+    .charactersbody.Mira{
+        grid-column: 1;
+    }
+
     .Mira1, .Saria1, .Jiya1, .Anya1, .Mina1, .Northern1, .Eastern1, .Central1, .Southern1, .Western1{
         display: block;
         border: 3px solid whitesmoke;
@@ -129,7 +196,7 @@
         margin: auto;
         border-radius: 5%;
     }
-    .Miraimg {
+    .secondaryimg {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -143,8 +210,8 @@
     
     .characterp {
         text-align: center;
-        width: 100%; /* Adjust the width as needed */
-        margin: 5px; /* Add spacing between text */
+        width: 100%;
+        margin: 5px; 
     }
 
 
@@ -152,15 +219,23 @@
         text-align: center;
         margin: auto;
         padding: 2%;
-        font-size: 110%;
+        font-size: 125%;
         color: antiquewhite;
+        grid-column: span 2;
+        font-family: 'Gentium Book Plus', serif;
+    }
+
+    .charactersheader {
+        background-color: #2d3f2e;
+        border: solid #ddd;
+        border-radius: 5%;
     }
 
     .homepagetext, .booktitle{
         text-align: center;
         margin: auto;
         padding: 1%;
-        font-size: 140%;
+        font-size: 125%;
         color: black;
     }
     .regiontext{
@@ -172,12 +247,17 @@
 
     }
 
+    .regionreltext{
+        font-size: 115%;
+    }
+
     .shadowbox{
         display: block;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        background-color: rgba(206, 159, 128, 0.4);
+        background-color: rgba(235, 199, 137, 0.4);
+        border: 2px solid rgb(191, 102, 30);
         padding: 90px 60px 80px 60px;
         border-radius: 30px;
         margin-top: 60px;
@@ -195,7 +275,7 @@
         height: 500px;
     }
 
-    .content2.shadowbox, .content3.shadowbox, .content4.shadowbox, .content5.shadowbox{
+    .content2.shadowbox, .content3.shadowbox, .content5.shadowbox, .content6.shadowbox, .content7.shadowbox {
         justify-self: center;
         align-items: center;
         background-color: rgb(255, 255, 255,0.3);
@@ -212,8 +292,50 @@
         backdrop-filter: blur(7px);
         text-align: center;
         position: relative;
-        perspective: 1000px;
-        height: 500px;
+        height: 800px;
+        width: 95%;
+    }
+
+    .content4.shadowbox {
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        height: 80%;
+        width: 60%;
+    }
+
+    .content8.shadowbox, .content9.shadowbox {
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255,0.3);
+        padding: 90px 60px 80px 60px;
+        border-radius: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255,0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(7px);
+        text-align: center;
+        position: relative;
+        height: 80%;
+        width: 90%;
     }
 
     .content1.shadowbox{
@@ -235,15 +357,26 @@
         text-align: center;
         position: relative;
         grid-column: span 2;
+        padding-top: 2%;
         height: 80%;
-        width: 55%;
+        width: 70%;
         
+    }
+
+    .content5.shadowbox{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .content6.shadowbox{
+        grid-column: 2;
+        grid-row: 3;
     }
 
     .shadowbox .front-content,
     .shadowbox .back-content {
         position: absolute;
-        top: 15%;
+        top: 5%;
         left: 10%;
         right: 10%;
         bottom: 10%;
@@ -254,7 +387,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Nunito', sans-serif;
+        font-size: 115%;
+       
+    }
+
+    .regionsignif1 {
+        grid-column: span 2;
+        height: 850px;
+    }
+
+    .kurdishsun{
+        width: 5%;
+        padding-top: 1%;
+        margin: auto;
+        display: block;
+    }
+
+    .regionrel.firstheader{
+        padding-top: 0%;
+        padding-bottom: 1%;
+        font-size: 135%;
+    }
+
+    .regionrel{
+        font-size: 135%;
+        color: #000;
     }
 
     .shadowbox .back-content {
@@ -275,14 +432,13 @@
         grid-column: span 2;
         align-self: center;
         margin: auto;
-        width: 60%;
+        width: 75%;
     }
     .content1.homepagetext{
         line-height: 120%;
         font-size: 120%;
     }
     .content2 {
-        display: flex;
         grid-column: 1;
         grid-row: 2;
     }
@@ -294,19 +450,23 @@
     }
 
     .content4 {
-        display: flex;
-        grid-column: 2;
-        grid-row: 3;
+        grid-column: span 2; 
+        width: 60%;
     }
 
-    .content5 {
-        display: flex;
+    .content8 {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
+    }
+
+    .content9 {
+        display: flex;
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .homepagebackgroundimg{
-        background-image: url('../images/homepageback.jpg');
+        background-image: url('../images/homepageback.webp');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -353,6 +513,7 @@
         height: auto;
     }
 
+
     /*regions code */
 
     .regionbackgroundimage{
@@ -384,7 +545,7 @@
         grid-column: span 2;
     }
 
-    .regionsintro{
+    .regionsintro.shadowbox{
         grid-column: span 2;
     }
     .regionheader {

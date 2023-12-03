@@ -9,18 +9,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var dropdowns = document.querySelectorAll('.dropdown');
 
-    dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('click', function() {
-            // Toggle the 'active' class on the clicked dropdown
-            this.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdownButtons = document.querySelectorAll('.dropdown button');
 
-            // Close other dropdowns when one is clicked (optional)
-            dropdowns.forEach(function(otherDropdown) {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.remove('active');
+    dropdownButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var dropdown = this.nextElementSibling; 
+
+            
+            dropdown.classList.toggle('hidden');
+
+            
+            dropdownButtons.forEach(function (otherButton) {
+                if (otherButton !== button) {
+                    otherButton.nextElementSibling.classList.add('hidden');
                 }
             });
         });
